@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -67,6 +72,9 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
 
 .hero-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #e6f0ff;
   height: calc(100vh - 90px);
 }
@@ -118,15 +126,15 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
 }
 
 /* Hero info */
-.hero {
+.hero-wrap {
   padding-top: 130px;
 }
 
-.hero .info {
+.hero-wrap .info {
   width: 55%;
 }
 
-.hero .subtitle {
+.hero-wrap .subtitle {
   color: #687690;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -134,7 +142,7 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
   letter-spacing: 0.18px;
 }
 
-.hero .title {
+.hero-wrap .title {
   margin-top: 8px;
   color: #000336;
   font-size: 6.4rem;
@@ -142,7 +150,7 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
   line-height: 1.19; /* 118.75% */
 }
 
-.hero .desc {
+.hero-wrap .desc {
   margin-top: 30px;
   color: #5a6473;
   font-size: 1.8rem;
@@ -150,7 +158,7 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
   text-transform: capitalize;
 }
 
-.hero .hero-cta {
+.hero-wrap .hero-cta {
   min-width: 170px;
   margin-top: 40px;
 }
