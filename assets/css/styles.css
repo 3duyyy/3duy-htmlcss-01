@@ -68,7 +68,7 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
 .hero-wrap {
   position: relative;
   background: #e6f0ff;
-  height: 100vh;
+  height: calc(100vh - 90px);
 }
 
 .navbar {
