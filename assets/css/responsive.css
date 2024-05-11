@@ -1,0 +1,142 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & PC  */
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: relative;
+    }
+
+    .logo-header {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -45%);
+    }
+
+    .toggle-menu {
+        width: 24px;
+        color: #666;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        padding: 80px;
+        transform: translateX(-100%);
+        transition: 0.25s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 40px;
+    }
+
+    .menu-drawer li {
+        padding: 30px 0;
+    }
+    
+    .menu-drawer li a {
+        color: #333;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked + .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-wrap {
+        padding: 0;
+    }
+
+    .hero-wrap .title {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .listguides .guide-item {
+        margin: 0; /*fix lỗi xuống hàng*/
+        flex: 1;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        padding: 40px;
+        inset: 0 25% 0 0;
+    }
+
+    .navbar .action {
+        display: none;
+    }
+
+    .mobile-action {
+        margin-top: 30px;
+    }
+
+    .action-link{
+        color: #0f1b4c;
+        margin-right: 20px;
+    }
+
+}

@@ -289,8 +289,7 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
 .featured {
   margin-top: 41px;
   background: #f5fafe;
-  height: 727px;
-  padding: 110px 165px;
+  padding: 110px 0;
 }
 
 .featured .title {
@@ -326,7 +325,8 @@ nếu không khai báo giá trị thì nó mặc định có giá trị là 2 (t
 }
 
 .featured .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px; /*Tạo khoảng cách giữa các phần tử*/
   margin-top: 70px;
 }
